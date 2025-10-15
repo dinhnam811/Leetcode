@@ -61,4 +61,34 @@ elif word1 != word2:
 	else:
 		print("they are not the same")
 
+# Create a list of numbers from user input
+num = input("please enter")
+numbers = []
+for i in num:
+	numbers.append(int(i))
+print(numbers)
+
+ # Loop through the list and calculate the total sum
+num = input("please enter")
+numbers = []
+for i in num:
+	numbers.append(int(i))
+print(sum(numbers))
+
+#Find the minimum and maximum number in your list.
+num = input("please enter")
+numbers = []
+
+for i in num:
+	numbers.append(int(i))
+
+min_value = numbers[0]
+max_value = numbers[0]
+for a in numbers:
+	if max_value < a:
+		max_value = a
+	if min_value > a:
+		min_value = a
 		
+print("the maximum is" + str(max_value))
+print("the minimum is" + str(min_value))

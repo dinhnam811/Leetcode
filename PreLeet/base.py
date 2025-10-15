@@ -89,6 +89,23 @@ for a in numbers:
 		max_value = a
 	if min_value > a:
 		min_value = a
-		
+
+#Find the second maximum number 
 print("the maximum is" + str(max_value))
 print("the minimum is" + str(min_value))
+
+num = input("please enter")
+numbers = []
+
+for i in num:
+	numbers.append(int(i))
+max_value = numbers[0]
+second_max = 0
+for a in numbers:
+	if max_value < a:
+		second_max = max_value
+		max_value = a
+	elif a > second_max and a!= max_value:
+		second_max = a
+print(second_max)
+		

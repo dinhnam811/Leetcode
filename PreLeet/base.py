@@ -108,4 +108,43 @@ for a in numbers:
 	elif a > second_max and a!= max_value:
 		second_max = a
 print(second_max)
-		
+
+#Count how many times an element appears in the list (frequency count)
+array1 = input("please enter")
+numbers = []
+
+for i in array1:
+	numbers.append(int(i))
+
+inputnum = int(input("please enter the element"))
+count = 0
+for a in numbers:
+	if a == inputnum:
+		count += 1
+print("the frequency is" + str(count))
+
+#If the user inputs a number, you want to remove that number from the list — but only if it exists.
+array1 = input("please enter the array")
+numbers = []
+
+for i in array1:
+	numbers.append(int(i))
+
+inputnum = int(input("please enter the element"))
+if inputnum in numbers:
+	numbers.remove(inputnum)
+else:
+	print("number not found")
+
+#Remove by index
+array1 = input("please enter the array")
+numbers = []
+
+for i in array1:
+	numbers.append(int(i))
+
+inputnum = int(input("please enter the position"))
+if inputnum < len(numbers):
+	removed = numbers.pop(inputnum)
+else:
+	print("the array is not that long")

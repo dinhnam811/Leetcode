@@ -148,3 +148,16 @@ if inputnum < len(numbers):
 	removed = numbers.pop(inputnum)
 else:
 	print("the array is not that long")
+
+#Ask the user for a number, and check if that number exists in the list.
+array1 = input("please enter the array")
+numbers = []
+
+for i in array1:
+	numbers.append(int(i))
+
+inputnum = int(input("please enter the number you want to check"))
+if inputnum in numbers:
+	print("Yes, it exist")
+else:
+	print("Nope, not found!")
